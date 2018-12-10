@@ -3,7 +3,7 @@ FROM python:3
 
 #ajoute les fichiers necessaires
 ADD __main__.py /
-ADD requirements.txt
+ADD requirements.txt /
 
 #pre requis pour utiliser le fichier python
 RUN pip install -r requirements.txt
