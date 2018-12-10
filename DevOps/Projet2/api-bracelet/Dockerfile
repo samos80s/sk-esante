@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 CMD [ "python", "./__main__.py" ]
 
 #expose les port reseaux
-EXPOSE 80 8080
+#EXPOSE 80 8080
