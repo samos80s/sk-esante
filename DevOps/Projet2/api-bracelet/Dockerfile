@@ -1,8 +1,9 @@
 #language utilisé
 FROM python:3
 
-#ajoute le fichier python contenant l'api
+#ajoute les fichiers necessaires
 ADD __main__.py /
+ADD requirements.txt
 
 #pre requis pour utiliser le fichier python
 RUN pip install -r requirements.txt
