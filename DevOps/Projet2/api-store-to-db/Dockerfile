@@ -9,7 +9,7 @@ ADD requirements.txt /
 RUN pip install -r requirements.txt
 
 #lance le script python
-CMD [ "python", "./__main__.py -H 10.132.0.2 -P 27017 -D db-esante -u esante -p Lenovo10 -A 10.132.0.2" ]
+CMD [ "python", "./__main__.py -H localhost -P 27017 -D db-esante -u esante -p Lenovo10 -A localhost" ]
 
 #CMD [ "python", "./__main__.py -H mon_serveur_mongo -P 27017 -D ma_database_mongo -u mon_user_mongo -p mon_password_mongo -A mon_api_bracelet" ]
 
