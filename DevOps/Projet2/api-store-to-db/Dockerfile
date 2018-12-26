@@ -5,6 +5,9 @@ FROM python:3
 ADD __main__.py /
 ADD requirements.txt /
 
+#ajoute les authorisation sur le script python
+RUN chmod 777 /__main__.py
+
 #pre requis pour utiliser le fichier python
 RUN pip install -r requirements.txt
 
