@@ -3,6 +3,7 @@ FROM python:3
 
 #ajoute les fichiers necessaires
 ADD __main__.py /
+ADD _version.py /
 ADD requirements.txt /
 
 #pre requis pour utiliser le fichier python
