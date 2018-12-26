@@ -7,7 +7,7 @@ ADD _version.py /
 ADD requirements.txt /
 
 #ajoute les authorisation sur les scripts python
-RUN chmod 777 /*
+RUN chmod 777 /*.py
 
 #pre requis pour utiliser le fichier python
 RUN pip install -r requirements.txt
