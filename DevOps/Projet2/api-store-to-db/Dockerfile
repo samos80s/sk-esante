@@ -1,12 +1,13 @@
 #language utilisé
 FROM python:3
 
-#ajoute le fichier python contenant l'api
+#ajoute les fichiers necessaires
 ADD __main__.py /
+ADD _version.py /
 ADD requirements.txt /
 
 #ajoute les authorisation sur le script python
-RUN chmod 777 /__main__.py
+RUN chmod 777 /*.py
 
 #pre requis pour utiliser le fichier python
 RUN pip install -r requirements.txt
