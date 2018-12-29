@@ -13,7 +13,7 @@ RUN chmod 777 /*.py
 RUN pip install -r requirements.txt
 
 #lance le script python
-ENTRYPOINT [ "python", "./__main__.py -H 146.148.21.137 -P 27017 -D db-esante -u admsk -p unPasswordQuiVaBien -A 146.148.21.137" ]
+ENTRYPOINT [ "python", "./__main__.py -H 146.148.21.137 -P 27017 -D db-sam -u admsk -p unPasswordQuiVaBien -A 146.148.21.137" ]
 
-#expose les port reseaux
-#EXPOSE 80 8080
+#expose le port reseaux mongodb
+EXPOSE 27017
