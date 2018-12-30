@@ -13,7 +13,7 @@ RUN chmod 777 /api-store-to-db/*.py
 RUN pip install -r /api-store-to-db/requirements.txt
 
 #lance le script python
-RUN [ "python", "/api-store-to-db/__main__.py -H localhost -P 27017 -D db-sam -u admsk -p unPasswordQuiVaBien -A localhost" ]
+ENTRYPOINT [ "python", "/api-store-to-db/__main__.py -H localhost -P 27017 -D db-sam -u admsk -p unPasswordQuiVaBien -A localhost" ]
 
 #expose le port reseaux mongodb
 EXPOSE 27017
