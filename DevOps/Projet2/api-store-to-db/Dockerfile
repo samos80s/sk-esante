@@ -17,7 +17,7 @@ RUN chmod +x /api-store-to-db/__main__.py
 RUN pip install -r /api-store-to-db/requirements.txt
 
 #lance le script python
-ENTRYPOINT [ "python", ".__main__.py -H db-sam -P 27017 -D db-sam -u "admsk" -p "unPasswordQuiVaBien" -A api-bracelet-skd" ]
+ENTRYPOINT [ "python", "./__main__.py -H db-sam -P 27017 -D db-sam -u "admsk" -p "unPasswordQuiVaBien" -A api-bracelet-skd" ]
 
 #expose le port reseaux mongodb
 EXPOSE 27017
